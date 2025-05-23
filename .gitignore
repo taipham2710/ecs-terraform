@@ -1,32 +1,34 @@
-# Terraform
-.terraform/
+
+# Ignore Terraform state files
 *.tfstate
-*.tfstate.*
+*.tfstate.backup
+
+# Ignore crash logs
 crash.log
-terraform.tfvars
+
+# Ignore CLI configuration files
+.terraform/
+
+# Ignore override files (often used for local-only customization)
+*.tfvars
+*.tfvars.json
 override.tf
 override.tf.json
-*.tfplan
-*.backup
-*.log
+*_override.tf
+*_override.tf.json
 
-# Terraform lint & plan files
-*.tfsec
-*.tflint.*
-*.plan
-
-# Secrets & credentials
+# Ignore sensitive key files
 *.pem
 *.key
 *.crt
-*.env
-.env.*
-secrets/
-credentials/
+*.zip
 
-# Logs
-logs/
-*.log
+# Ignore IDE/editor settings (optional, if using VSCode, JetBrains, etc.)
+.vscode/
+.idea/
+.DS_Store
 
-# Ignore user data scripts output/logs
-terraform/modules/ec2/*.log
+
+.terraform.lock.hcl
+
+secret-key.pem

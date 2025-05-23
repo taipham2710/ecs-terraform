@@ -1,3 +1,5 @@
+
+
 variable "ecs_cluster_name" {
   description = "The name of the ECS cluster"
   type        = string
@@ -33,3 +35,13 @@ variable "load_balancer_name" {
   type        = string
   default     = "muzique-load-balancer"
 }
+
+# variable "vpc_id" {
+#   description = "The VPC ID where the ECS services will be deployed"
+#   type        = string
+# }
+
+# variable "subnet_ids" {
+#   description = "The subnet IDs for the ECS services"
+#   type        = list(string)
+# }
