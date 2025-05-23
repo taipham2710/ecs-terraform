@@ -1,0 +1,32 @@
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+crash.log
+terraform.tfvars
+override.tf
+override.tf.json
+*.tfplan
+*.backup
+*.log
+
+# Terraform lint & plan files
+*.tfsec
+*.tflint.*
+*.plan
+
+# Secrets & credentials
+*.pem
+*.key
+*.crt
+*.env
+.env.*
+secrets/
+credentials/
+
+# Logs
+logs/
+*.log
+
+# Ignore user data scripts output/logs
+terraform/modules/ec2/*.log
